@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Dark theme tokens (only mode) ── */
+:root {
+  --c-bg:       25  25  25;
+  --c-surface:  30  30  30;
+  --c-panel:    31  31  31;
+  --c-border:   42  42  42;
+  --c-input:    34  34  34;
+  --c-hover:    34  34  34;
+  --c-selected: 35  43  58;
+  --c-text:     224 224 224;
+  --c-t2:       176 176 176;
+  --c-t3:       102 102 102;
+  --c-t4:       85  85  85;
+  --c-accent:   74  144 217;
+
+  --background: 0 0% 9.8%;
+  --foreground: 0 0% 88%;
+  --card: 0 0% 12%;
+  --card-foreground: 0 0% 88%;
+  --popover: 0 0% 12%;
+  --popover-foreground: 0 0% 88%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 0 0% 9%;
+  --secondary: 0 0% 16%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 16%;
+  --muted-foreground: 0 0% 55%;
+  --accent: 0 0% 16%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 16%;
+  --input: 0 0% 16%;
+  --ring: 0 0% 83%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    background-color: rgb(var(--c-bg));
+    color: rgb(var(--c-text));
+  }
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: rgb(var(--c-surface)); }
+::-webkit-scrollbar-thumb { background: rgb(var(--c-border)); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgb(var(--c-t4)); }

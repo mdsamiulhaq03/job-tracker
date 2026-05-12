@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/api/health/route": "/api/health",
+  "/api/jobs/route": "/api/jobs",
+  "/api/register/route": "/api/register",
+  "/api/jobs/[id]/route": "/api/jobs/[id]",
+  "/api/user/cover/route": "/api/user/cover",
+  "/favicon.ico/route": "/favicon.ico",
+  "/(auth)/login/page": "/login",
+  "/page": "/",
+  "/dashboard/page": "/dashboard",
+  "/(auth)/register/page": "/register"
+}
